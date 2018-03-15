@@ -1,4 +1,4 @@
-# randomQuoteGenerator
+# wikipediaViewer
 A freeCodeCamp project.
 
 <h3>Build a Wikipedia Viewer</h3>
