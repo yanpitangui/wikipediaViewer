@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Wikipedia Viewer</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Cantata+One|Lustria" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.4/css/materialize.min.css">
+
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.4/js/materialize.min.js"></script>
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/main.css">
+
+	<script src="main.js"></script>
+</head>
+
+<body>
+	<h1 id="title" align="center">
+            <font color="white">Wikipedia Viewer</font>
+        </h1>
+	<div id="random">
+		<button type="button" class="btn btn-danger" onclick="window.open('https://en.wikipedia.org/wiki/Special:Random');">Click to open a random article</button>
+	</div>
+	<div id="text">Or</div>
+	<div class="search-wrapper">
+		<div class="input-holder">
+			<input type="text" onkeyup="return runSearch(event)" class="search-input" placeholder="Type to search" />
+			<button class="search-icon" onclick="searchToggle(this, event);">
+                    <span></span>
+                </button>
+		</div>
+		<span class="close" onclick="searchToggle(this, event);"></span>
+	</div>
+
+	<div id="result">
+	</div>
+
+
+</body>
+
+</html>
